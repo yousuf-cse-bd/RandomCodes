@@ -20,10 +20,11 @@ int main(int argc, char const *argv[]){
     cout<<"--x\t--a\t--b"<<endl;
     printf("--------------------\n");
     while (--a, --b, --x);
+    // for(;--x; --a,--b);
     cout<<x<<"\t"<<a<<"\t"<<b<<endl;
-
+    
     // system("dir");
     // system("vol");
-    system("edit");
+    // system("edit");
     return 0;
 }
