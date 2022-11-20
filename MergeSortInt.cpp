@@ -15,11 +15,11 @@ void mergeSortConquer(int *elements, const int lowerIndex, const int midIndex, c
     /*i, j, k are index for left SubArray, rigth SubArray and tempList respectively*/
     int i, j, k;
     int tempList[upperIndex + 1];
-    i = j = lowerIndex, j = midIndex + 1;
+    i = k = lowerIndex, j = midIndex + 1;
     /*Traversing the both array lists*/
     while(i <= midIndex && j <= upperIndex){
         /*Comparing the left sub array is less than right sub array for ascending order*/
-        if(*(elements + i) < *(elements + j)){
+        if(*(elements + i) <= *(elements + j)){
             *(tempList + k) = *(elements + i);
             k++, i++;
         }else{
@@ -55,11 +55,11 @@ void mergeSortDivided(int *elements, const int lowerIndex, const int upperIndex)
 int main(int argc, char const *argv[]){
     /* code */
     system("cls");
-    int elements[] = {2, 1, 5, 4, 3};
+    int elements[] = {2, 1, 5, 4, 3, 0};
     const int size = sizeof(elements) / sizeof(int);
     mergeSortDivided(elements, 0, size-1);
     cout<<"The sorted elements: ";
-    for(auto x : elements){
+    for(auto x : elements){ /*ForEach Loop*/
         cout<<x<<" ";
     }
     cout<<endl;
