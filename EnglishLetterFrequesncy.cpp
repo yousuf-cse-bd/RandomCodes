@@ -34,7 +34,7 @@ int main(int argc, char const *argv[]){
     for(unsigned short int i {0}; i < alphabetNumber; i++){
         size_t frequncy {*(count+i)};
         cout<<letter++<<"|";
-        for(unsigned short int j{1}; j <= frequncy; j++){
+        for(size_t j{1}; j <= frequncy; j++){
             cout<<"*";
         }
         if(frequncy != 0){
