@@ -15,11 +15,11 @@ using namespace std;
 class NameTerms{
     /*Class Attributes or Member Variables*/
 private:
-    const string firstName{};
-    string middleName{}, lastName{};
+    const string firstName{}, middleName{};
+    string lastName{};
     /*Class Methods or Member Functions*/
 public:
-    NameTerms(const string firstName = "", string middleName = "", string lastName = ""):firstName{firstName}, middleName{middleName}, lastName{lastName}{
+    NameTerms(const string firstName = "", const string middleName = "", const string lastName = ""):firstName{firstName}, middleName{middleName}, lastName{lastName}{
         cout<<"\tDefault parameterized constructor"<<endl;
 
         if(firstName.length() != 0 && middleName.length() == 0 && lastName.length() == 0){
