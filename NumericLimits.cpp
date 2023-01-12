@@ -31,6 +31,10 @@ int main(int argc, char const *argv[]){
 
     cout<<"\nThe range for <short> in from: "<<numeric_limits<short>::min()<<" to "<<numeric_limits<short>::max()
         <<" and size: "<<sizeof(short)<<" Bytes."<<endl;
+
+    cout<<"\nThe range for <unsigned short int> in from: "<<numeric_limits<unsigned short int>::min();
+        cout<<" to "<<numeric_limits<unsigned short int>::max()<<" and size: "<<sizeof(unsigned short int)<<" Bytes."<<endl;
+        
     cout<<"\nThe range for <int> in from: "<<numeric_limits<int>::min()<<" to "<<numeric_limits<int>::max();
         cout<<" and size: "<<sizeof(int)<<" Bytes."<<endl;
     // cout<<"Int-Min: "<<INT_MIN<<"\tInt-Max: "<<INT_MAX<<endl;
@@ -46,13 +50,13 @@ int main(int argc, char const *argv[]){
     cout<<"\nThe range for <size_t> from: "<<numeric_limits<size_t>::min()<<" to "<<numeric_limits<size_t>::max();
         cout<<" and size: "<<sizeof(size_t)<<" Bytes."<<endl;
 
-    cout<<"\nThe range for <float> from: "<<numeric_limits<float>::min()<<" to "<<numeric_limits<float>::max();
+    cout<<"\nThe range for <float> from: "<<numeric_limits<float>::lowest()<<" to "<<numeric_limits<float>::max();
         cout<<" and size: "<<sizeof(float)<<" Bytes."<<endl;
 
-    cout<<"\nThe range for <double> from: "<<numeric_limits<double>::min()<<" to "<<numeric_limits<double>::max();
+    cout<<"\nThe range for <double> from: "<<numeric_limits<double>::lowest()<<" to "<<numeric_limits<double>::max();
         cout<<" and size: "<<sizeof(double)<<" Bytes."<<endl;
 
-    cout<<"\nThe range for <long double> from: "<<numeric_limits<long double>::min()<<" to "<<numeric_limits<long double>::max();
+    cout<<"\nThe range for <long double> from: "<<numeric_limits<long double>::lowest()<<" to "<<numeric_limits<long double>::max();
         cout<<" and size: "<<sizeof(long double)<<" Bytes."<<endl;
     system("pause>0");
     return 0;
