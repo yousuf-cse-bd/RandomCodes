@@ -1,6 +1,6 @@
 /**
  * @file ArrayInsertAnItem.cpp
- * @author your name (you@domain.com)
+ * @author Md. Yousuf Ali (yousuf.cse17@gmail.com)
  * @brief Insert an element of existing array with array notation
  * @version 0.1
  * @date 2023-01-23
