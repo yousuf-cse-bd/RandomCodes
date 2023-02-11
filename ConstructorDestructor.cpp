@@ -33,6 +33,8 @@ public:
         cout<<"Contructor called for: "<<name<<endl;
     }
     ~Dog(){
+        delete ptrAge;
+        ptrAge = nullptr;
         cout<<"Destructor called for: "<<name<<endl;
     }
 
